@@ -19,7 +19,7 @@ class Genre
   end
 
   def songs
-    @songs
+    
   end
 
   def artists
