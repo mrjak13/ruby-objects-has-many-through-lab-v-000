@@ -24,5 +24,4 @@ class Doctor
     binding.pry
     appointments.collect {|app| app.patient}
   end
-
 end
