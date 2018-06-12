@@ -15,11 +15,10 @@ class Genre
 
   def new_song(name, artist)
     name = Song.new(name, artist, self)
-    songs << name
   end
 
   def songs
-
+        
   end
 
   def artists
