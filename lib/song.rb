@@ -9,4 +9,8 @@ class Song
     @genre = genre
     @@all << name
   end
+
+  def self.all
+    @@all    
+  end
 end
