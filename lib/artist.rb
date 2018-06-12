@@ -16,6 +16,7 @@ class Artist
 
   def new_song(name, genre)
     name = Song.new(name, self, genre)
+    name.artist = self
     self.songs << name
   end
 
