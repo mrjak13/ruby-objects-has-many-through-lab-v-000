@@ -14,13 +14,11 @@ class Artist
   end
 
   def new_song(name, genre)
-    name = Song.new(name, self, genre)
-    name.artist = self
-    self.songs << name
+    name = Song.new(name, self, genre)    
   end
 
   def songs
-    # @songs.select {|artist| artist.name == self.name}
+    
   end
 
 
