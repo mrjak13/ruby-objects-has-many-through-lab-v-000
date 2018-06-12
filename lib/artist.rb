@@ -16,11 +16,10 @@ class Artist
 
   def new_song(name, genre)
     name = Song.new(name, self, genre)
-    songs << name
+    self.songs << name
   end
 
   def songs
-    binding.pry
     @songs.select {|artist| artist.name == self.name}
   end
 
