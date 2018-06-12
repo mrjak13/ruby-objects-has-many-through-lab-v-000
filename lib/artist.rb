@@ -21,7 +21,7 @@ class Artist
   end
 
   def songs
-    @songs.flatten
+    @songs
   end
 
 
