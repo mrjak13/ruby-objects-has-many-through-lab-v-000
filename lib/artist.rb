@@ -1,3 +1,4 @@
+require 'pry'
 class Artist
   attr_accessor :name
 
@@ -5,10 +6,23 @@ class Artist
 
   def initialize(name)
     @name = name
-    @@all << name  
+    @@all << name
+    @songs = []
   end
 
   def self.all
-    @@all    
+    @@all
   end
+
+  def new_song(name)
+    name = Song.new(name)
+    name.artist = self
+    songs << name
+  end
+
+  def songs
+    @songs
+  end
+
+
 end
