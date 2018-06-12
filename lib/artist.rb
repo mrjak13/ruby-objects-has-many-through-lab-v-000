@@ -19,7 +19,8 @@ class Artist
   end
 
   def songs
-    Song.all.select
+    binding.pry
+    # Song.all.select
   end
 
 
